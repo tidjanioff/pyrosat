@@ -4,7 +4,7 @@ PyroSat is a **wildfire tracking application** built with **React** and powered 
 It provides an **interactive world map** that displays **active wildfire events in real-time**, offering a simple and intuitive way to visualize ongoing fire activity across the globe.  
 
 <p align="center">
-  <img src="src/components/logo.png" width="300">
+  <img src="src/components/logo2.png" width="300">
 </p>  
 
 ---
