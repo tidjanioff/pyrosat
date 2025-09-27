@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+}
+.header {
+  position: relative; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff; 
+  padding: 10px 20px;
+  border-bottom: 2px solid #ccc; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+.header {
+  position: relative; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #c80000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.powered-by {
+  font-size: 15.5px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  margin-left: 5px;
+  gap: 6px;
+}
+
+.nasa-logo {
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.nasa-logo:hover {
+  transform: scale(1.1);
+}
+
+
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.location-icon {
+  font-size: 2rem;
+  color: red;
+}
+
+.location-info {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  background: #ffffff; 
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  color: #000000; 
+  backdrop-filter: blur(5px); 
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.location-info:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+.location-info h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #c80000; 
+}
+
+.location-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.location-info li {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.location-info li:last-child {
+  border-bottom: none;
+}
+
+.logo-container {
+  position: absolute;
+  top: -62px;
+  left: 20px;
+  width: 87px;
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #ffffff; 
+  
+  text-align: center;
+  
+  border-top: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+}
+
+.footer p {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 10px;
+    }
+
+
+
+    .loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh; 
+  color: #c80000;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 15px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #eee;
+  border-top: 5px solid #c80000; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  
+  color: #000000;
+  
+}
+
+
+
+.landing p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #000000;
+  margin-top:-10px;
+}
+
+.launch-btn {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(230, 57, 70, 0.4);
+}
+
+.launch-btn:hover {
+  background: #ff4d5a;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(230, 57, 70, 0.6);
+}
+
+
+.landing-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #ffffff; 
+  
+  text-align: center;
+  
+  
+  
+}
+
+.landing-footer p {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 10px;
+    }
